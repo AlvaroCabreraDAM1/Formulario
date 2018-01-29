@@ -1,0 +1,92 @@
+body,html {
+	margin: 0px;
+	
+	padding: 0px;
+	
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-image: url("../img/background.png");
+	background-repeat: repeat;
+}
+
+#titulo {
+	background-color: rgba(252, 252, 252, 0.85);
+	
+	border-radius: 10px;
+	
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	
+	height: 20%;
+	width: 90%;
+	
+	text-align:center;	
+}
+
+#titulo_text {
+	
+	position:relative;
+	
+	top:15%;
+	
+	font-size: 350%;
+	font-weight: bold;
+	font-family: "Comic Sans MS", sans-serif;
+	
+}
+
+.ditto {
+	background-image: url("../img/Ditto.png");
+	background-size:cover;
+	
+	position:relative;
+	
+	top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	
+	height:90%;
+	width:10%;
+}
+
+#dittoI {
+	float:left;
+}
+
+#dittoD {
+	float:right;
+}
+
+#formulario {
+	background-color: rgba(252, 252, 252, 0.85);
+	
+	border-radius: 10px;
+	
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.pregunta {
+	
+	position:relative;
+	
+	top: 35px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	
+	font-size:125%;
+}
+
+#tope {
+	opacity:0;
+	
+}
