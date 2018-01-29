@@ -1,5 +1,5 @@
 // fichoro xml que está en el servidor rawgit
-var url="https://rawgit.com/JuanAntonioBieto/LM-Formulario/master/xml/xml.xml";
+var url="https://rawgit.com/AlvaroCabreraDAM1/Formulario/master/xml/formulario.xml";
 
 var xhttp = new XMLHttpRequest();
 
