@@ -39,26 +39,6 @@ body,html {
 	
 }
 
-a {
-	
-	/* Basico: */
-	
-		/* Tamaño */
-	
-		/* Posicion */
-	
-		/* Margen */
-	
-		/* Fondo */
-	
-	/* Otros: */
-	
-		/* Texto */
-		
-		text-decoration:none;
-	
-}
-
 #cabecera {
 	
 	/* Basico: */
@@ -185,7 +165,8 @@ a {
 
 input[type=text] {
 	
-	width:50%;
+	width:98%;
+	font-size:100%;
 	
 }
 
@@ -195,7 +176,7 @@ select {
 	
 		/* Tamaño */
 		
-		width:50%;
+		width:100%;
 	
 		/* Posicion */
 	
@@ -204,6 +185,8 @@ select {
 		/* Fondo */
 	
 	/* Otros: */
+	
+	font-size:110%;
 	
 }
 
@@ -277,12 +260,12 @@ input[type=checkbox], [type=radio] {
 	
 		/* Tamaño */
 		
-		width:30%;
-		height:50px;
+		width:70%;
+		height:30px;
 	
 		/* Posicion */
 		
-		margin-left:35%;
+		margin-left:15%;
 	
 		/* Margen */
 	

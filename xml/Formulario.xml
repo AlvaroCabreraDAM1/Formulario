@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE questions SYSTEM "dtd.dtd">
+
+<questions>
+
+	<question>
+		<type>text</type>
+		<title>¿Que alumno de la lista viene menos a clase?</title>
+		<answer>Luciano</answer>
+		<answer>Luciano Ariel</answer>
+		<answer>Ariel</answer>
+	</question>
+	
+	<question>
+		<type>text</type>
+		<title>¿Quieres morir?</title>
+		<answer>Sí</answer>
+	</question>
+	
+	<question>
+		<type>select</type>
+		<title>¿Cual es el orden de recogida de ordenadores?</title>
+		<option>Alvaro / Marc / Chirstian / Tercero</option>
+		<option>Tercero / Christian / Alberto / Djavan</option> 
+		<option>Alvaro / Christian / Alberto / Marc</option>
+		<option>Djavan / Javi / Juan Sebastian Peña Torres / Alvaro</option>
+		<answer>2</answer> 
+	</question>
+	
+	<question>
+		<type>select</type>
+		<title>¿Cual es la frase estrella de Tercero?</title>
+		<option>Pero miralo</option>
+		<option>¿Quieres morir?</option> 
+		<option>¿Te drestrozo?</option>
+		<option>Yo estaba antes</option>
+		<answer>2</answer> 
+	</question>	
+	
+	<question>
+		<type>multiple</type>
+		<title>¿Que personas son mas propensas olvidarse el ordenador o el cargador?</title>
+		<option>Tercero</option>
+		<option>Alberto</option> 
+		<option>Marc</option> 
+		<option>Adolfo</option>
+		<answer>0</answer>
+		<answer>3</answer>
+	</question>
+	
+	<question>
+		<type>multiple</type>
+		<title>¿Que personas no traen dispositivos de almacenamiento extraible a clase?</title>
+		<option>Tercero</option>
+		<option>Christian</option> 
+		<option>Alberto</option> 
+		<option>Alvaro</option>
+		<answer>0</answer>
+		<answer>1</answer>
+	</question>
+	
+	<question>
+		<type>checkbox</type>
+		<title>¿Que le falta a Christian?</title>
+		<option>Pelo</option>
+		<option>Autocontrol</option> 
+		<option>Contenido</option> 
+		<option>Mangas</option>
+		<answer>1</answer>
+		<answer>2</answer>
+		<answer>3</answer>
+	</question>
+	
+	<question>
+		<type>checkbox</type>
+		<title>¿Que cosas son mas probables que falten cuando te falla el codigo?</title>
+		<option>El "Values"</option>
+		<option>El "Repeat"</option> 
+		<option>El ";"</option> 
+		<option>Las ganas de vivir</option>
+		<answer>0</answer>
+		<answer>1</answer>
+		<answer>2</answer>
+		<answer>3</answer>
+	</question>
+	
+	<question >
+		<type>radio</type>
+		<title>¿Cual de las siguientes materias entra seguro en el examen?</title>
+		<option>Back Panel</option>
+		<option>Arquitectura de Von Niuman</option> 
+		<option>MBR vs GPT</option> 
+		<option>Sistemas de administracion de archivos</option>
+		<answer>0</answer>
+	</question>
+	
+	<question>
+		<type>radio</type>
+		<title>¿Como se inicia una votacion en clase?</title>
+		<option>Vamos a votar</option>
+		<option>¿Que opcion preferiis?</option> 
+		<option>Elijamos el dia de examen</option> 
+		<option>CHICOS!!!</option>
+		<answer></answer>		  
+	</question>	
+	
+</questions>	

@@ -1,0 +1,122 @@
+{
+  "questions": {
+    "question": [
+      {
+        "type": "text",
+        "title": "¿Que alumno de la lista viene menos a clase?",
+        "answer": [
+          "Luciano",
+          "Luciano Ariel",
+          "Ariel"
+        ]
+      },
+      {
+        "type": "text",
+        "title": "¿Quieres morir?",
+        "answer": "Sí"
+      },
+      {
+        "type": "select",
+        "title": "¿Cual es el orden de recogida de ordenadores?",
+        "option": [
+          "Alvaro / Marc / Chirstian / Tercero",
+          "Tercero / Christian / Alberto / Djavan",
+          "Alvaro / Christian / Alberto / Marc",
+          "Djavan / Javi / Juan Sebastian Peña Torres / Alvaro"
+        ],
+        "answer": "2"
+      },
+      {
+        "type": "select",
+        "title": "¿Cual es la frase estrella de Tercero?",
+        "option": [
+          "Pero miralo",
+          "¿Quieres morir?",
+          "¿Te drestrozo?",
+          "Yo estaba antes"
+        ],
+        "answer": "2"
+      },
+      {
+        "type": "multiple",
+        "title": "¿Que personas son mas propensas olvidarse el ordenador o el cargador?",
+        "option": [
+          "Tercero",
+          "Alberto",
+          "Marc",
+          "Adolfo"
+        ],
+        "answer": [
+          "0",
+          "3"
+        ]
+      },
+      {
+        "type": "multiple",
+        "title": "¿Que personas no traen dispositivos de almacenamiento extraible a clase?",
+        "option": [
+          "Tercero",
+          "Christian",
+          "Alberto",
+          "Alvaro"
+        ],
+        "answer": [
+          "0",
+          "1"
+        ]
+      },
+      {
+        "type": "checkbox",
+        "title": "¿Que le falta a Christian?",
+        "option": [
+          "Pelo",
+          "Autocontrol",
+          "Contenido",
+          "Mangas"
+        ],
+        "answer": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "type": "checkbox",
+        "title": "¿Que cosas son mas probables que falten cuando te falla el codigo?",
+        "option": [
+          "El \"Values\"",
+          "El \"Repeat\"",
+          "El \";\"",
+          "Las ganas de vivir"
+        ],
+        "answer": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "type": "radio",
+        "title": "¿Cual de las siguientes materias entra seguro en el examen?",
+        "option": [
+          "Back Panel",
+          "Arquitectura de Von Niuman",
+          "MBR vs GPT",
+          "Sistemas de administracion de archivos"
+        ],
+        "answer": "0"
+      },
+      {
+        "type": "radio",
+        "title": "¿Como se inicia una votacion en clase?",
+        "option": [
+          "Vamos a votar",
+          "¿Que opcion preferiis?",
+          "Elijamos el dia de examen",
+          "CHICOS!!!"
+        ]
+      }
+    ]
+  }
+}
