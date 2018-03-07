@@ -1,6 +1,6 @@
 # Formulario
 
-Link a la pagina: 
+Link a la página: 
 
 https://rawgit.com/AlvaroCabreraDAM1/Formulario/master/inicio.html
 
@@ -27,7 +27,7 @@ Este formulario consta de:
 
 - Comprobación de preguntas no contestadas para que el usuario este obligado a contestarlas todas para poder corregir su examen.
 
-- Una pagina de inicio con instrucciones y presentación.
+- Una página de inicio con instrucciones y presentación.
 
 - Un fichero xml desde el que se cargan las preguntas y las respuestas.
 
