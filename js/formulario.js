@@ -193,7 +193,7 @@ function corregirText() {
 			
 			nota -= 1.0;
 			
-			explicar("La pregunta " + (numPregunta + 1) + " es incorrecta. " + "+ 1.0 Puntos");
+			explicar("La pregunta " + (numPregunta + 1) + " es incorrecta. " + "- 1.0 Puntos");
 			
 		}
 		
@@ -215,7 +215,7 @@ function corregirSelect() {
 			
 			nota -= 1.0;
 			
-			explicar("La pregunta " + (numPregunta + 1) + " es incorrecta. " + "+ 1.0 Puntos");
+			explicar("La pregunta " + (numPregunta + 1) + " es incorrecta. " + "- 1.0 Puntos");
 			
 		}
 		
@@ -257,7 +257,7 @@ function corregirSelectMultiple() {
 					
 					nota += 1.0/numRespuestas[numPregunta];
 					
-					explicar("La opccion " + (auz + 1) + " de la pregunta " + (numPregunta + 1) + " es correcta. " + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
+					explicar("La opccion " + (aux + 1) + " de la pregunta " + (numPregunta + 1) + " es correcta. +" + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
 					
 				}
 				
@@ -265,7 +265,7 @@ function corregirSelectMultiple() {
 					
 					nota -= 1.0/numRespuestas[numPregunta];
 					
-					explicar("La opccion " + (auz + 1) + " de la pregunta " + (numPregunta + 1) + " es incorrecta. " + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
+					explicar("La opccion " + (aux + 1) + " de la pregunta " + (numPregunta + 1) + " es incorrecta. -" + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
 					
 				}
 				
@@ -316,7 +316,7 @@ function corregirCheckbox() {
 					
 					nota += 1.0/numRespuestas[numPregunta];
 					
-					explicar("La opccion " + (auz + 1) + " de la pregunta " + (numPregunta + 1) + " es correcta. " + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
+					explicar("La opccion " + (aux + 1) + " de la pregunta " + (numPregunta + 1) + " es correcta. +" + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
 					
 				}
 					
@@ -324,7 +324,7 @@ function corregirCheckbox() {
 					
 					nota -= 1.0/numRespuestas[numPregunta];
 					
-					explicar("La opccion " + (auz + 1) + " de la pregunta " + (numPregunta + 1) + " es incorrecta. " + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
+					explicar("La opccion " + (aux + 1) + " de la pregunta " + (numPregunta + 1) + " es incorrecta. -" + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
 					
 				}
 				
@@ -371,7 +371,7 @@ function corregirRadio() {
 }
 
 function mostrarNota(){
-	var p = document.createElement("h4");
+	var p = document.createElement("h2");
 	if (nota < 0) {
 		nota = 0;
 	}
