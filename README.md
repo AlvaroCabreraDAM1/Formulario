@@ -36,38 +36,48 @@ Este formulario consta de:
 Respuestas correctas:
 
   1. Pregunta: ¿Que alumno de la lista viene menos a clase?
+  
      Respuesta: Luciano
 
   2. Pregunta: ¿Quieres morir?
+  
      Respuesta: Si
 
-  3. Pregunta: ¿Cual es el orden de recogida de ordenadores?</title>
-		 Respuesta: Alvaro / Christian / Alberto / Marc
+  3. Pregunta: ¿Cual es el orden de recogida de ordenadores?
+  
+     Respuesta: Alvaro / Christian / Alberto / Marc
 
   4. Pregunta: ¿Cual es la frase estrella de Tercero?
+  
      Respuesta: ¿Te drestrozo?
 
   5. Pregunta: ¿Que personas son mas propensas olvidarse el ordenador o el cargador?
+  
      Respuesta: Tercero
      Respuesta: Adolfo
 
   6. Pregunta: ¿Que personas no traen dispositivos de almacenamiento extraíble a clase?
+  
      Respuesta: Tercero
      Respuesta: Christian
 
-  7. Pregunta: ¿Que le falta a Christian? 
+  7. Pregunta: ¿Que le falta a Christian?
+  
      Respuesta: Autocontrol
      Respuesta: Contenido
      Respuesta: Mangas
 
   8. Pregunta: ¿Que cosas son mas probables que falten cuando te falla el código?
+  
      Respuesta: El "Values" 
      Respuesta: El "Repeat"
      Respuesta: El ";"
      Respuesta: Las ganas de vivir
 
   9. Pregunta: ¿Cual de las siguientes materias entra seguro en el examen?
+  
      Respuesta: Back Panel
 
   10. Pregunta: ¿Como se inicia una votación en clase?
+  
       Respuesta: CHICOS!!!
