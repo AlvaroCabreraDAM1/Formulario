@@ -183,11 +183,11 @@ function corregirText() {
 		
 		if(respuestas[numPregunta][0] == document.getElementsByTagName("input")[numPregunta].value) {
 			
-			nota += 1;
+			nota += 1.0;
 			
 		} else {
 			
-			nota -= 0.5;
+			nota -= 1.0;
 			
 		}
 		
@@ -201,11 +201,11 @@ function corregirSelect() {
 		
 		if(respuestas[numPregunta][0] == document.getElementsByTagName("Select")[numPregunta - 2].value) {
 			
-			nota += 1;
+			nota += 1.0;
 			
 		} else {
 			
-			nota -= 0.5;
+			nota -= 1.0;
 			
 		}
 		
@@ -306,7 +306,7 @@ function corregirCheckbox() {
 					
 				if (correcto == false) {
 					
-					
+					nota -= 1.0/numRespuestas[numPregunta];
 					
 				}
 				
@@ -337,11 +337,11 @@ function corregirRadio() {
 		
 		if (numRadio.value == respuestas[numPregunta][0]) {
 			
-			nota += 1;
+			nota += 1.0;
 			
 		} else {
 			
-			nota -= 1;
+			nota -= 1.0;
 			
 		}
 		
