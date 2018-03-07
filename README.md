@@ -55,7 +55,7 @@ Respuestas correctas:
      Respuesta: Tercero
      Respuesta: Christian
 
-  7. Pregunta: ¿Que le falta a Christian?
+  7. Pregunta: ¿Que le falta a Christian? 
      Respuesta: Autocontrol
      Respuesta: Contenido
      Respuesta: Mangas
