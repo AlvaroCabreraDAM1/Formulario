@@ -371,7 +371,7 @@ function corregirRadio() {
 }
 
 function mostrarNota(){
-	var p = document.createElement("h4");
+	var p = document.createElement("h2");
 	if (nota < 0) {
 		nota = 0;
 	}
