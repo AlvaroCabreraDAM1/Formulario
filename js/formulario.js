@@ -9,7 +9,11 @@ var b = 0;
 var c = 0;
 var r = 0;
 
+var num = 0;
+
 var nota = 0;
+
+var corregido = false;
 
 var respuestas = [];
 var numRespuestas = [];
@@ -22,15 +26,23 @@ window.onload = function() {
 		
 		nota = 0;
 		
-		corregirText();
-		corregirSelect();
-		corregirSelectMultiple();
-		corregirCheckbox();
-		corregirRadio();
-		mostrarNota();
+		if (comprobarContestadas() == true && corregido == false) {
+			
+			corregirText();
+			corregirSelect();
+			corregirSelectMultiple();
+			corregirCheckbox();
+			corregirRadio();
+			mostrarNota();
+		
+			corregido = true;
+		
+			return false;
+			
+		}
 		
 		return false;
-
+		
 	}
 	
 	xhttp.onreadystatechange = function() {
@@ -72,6 +84,8 @@ function gestionarXml(dadesXml){
 
 	//Preguntas Chaeckbox
 	
+	num = 0;
+	
 	for (numPregunta=6; numPregunta<8; numPregunta++) {
         var opcionesSelect = [];
         var nopt = xmlDoc.getElementsByTagName("question")[numPregunta].getElementsByTagName('option').length;
@@ -82,6 +96,8 @@ function gestionarXml(dadesXml){
     }
 	
 	//Preguntas Radio
+	
+	num = 0;
 	
 	for (numPregunta=8; numPregunta<10; numPregunta++) {
         var opcionesSelect = [];
@@ -110,11 +126,13 @@ function gestionarXml(dadesXml){
 }
 
 function ponerDatosSelectHtml(opt, numPregunta) {
+	
 	var select = document.getElementsByTagName("select")[numPregunta-2];
-	for (i = 0; i < opt.length; i++) {
+	
+	for (aux = 0; aux < opt.length; aux++) {
 		var option = document.createElement("option");
-		option.text = opt[i];
-		option.value = i;
+		option.text = opt[aux];
+		option.value = aux;
 		select.options.add(option);
 	}
 }
@@ -122,28 +140,22 @@ function ponerDatosSelectHtml(opt, numPregunta) {
 function ponerDatosCheckboxHtml(opt, numPregunta) {
 	
 	var radioCont = document.getElementsByClassName("preguntaC")[numPregunta-6];
-	var numC = "checkbox1";
-	
 	for (i = 0; i < opt.length; i++,c ++) {
-		
-		if (i > 1) {
-			
-			numC = "checkbox2";
-			
-		}
-		
 		var input = document.createElement("input");
 		var label = document.createElement("label");
 		label.innerHTML=opt[i];
 		label.htmlFor=("checkbox" + c);
 		input.id=("checkbox" + c);
 		input.type="checkbox";
-		input.name=numC;
+		input.name= ("checkbox" + num);
 		input.value=i;
 		radioCont.appendChild(input);
 		radioCont.appendChild(label);
 		radioCont.appendChild(document.createElement("br"));
 	}
+	
+	num ++;
+	
 }
 
 function ponerDatosRadioHtml(opt, numPregunta) {
@@ -156,12 +168,13 @@ function ponerDatosRadioHtml(opt, numPregunta) {
 		input.id=("radio" + r);
 		input.type="radio";
 		input.value=i;
-		input.name=("radio"+a);
+		input.name=("radio"+ num);
 		radioCont.appendChild(input);
 		radioCont.appendChild(label);
 		radioCont.appendChild(document.createElement("br"));
 	}
-	a++;
+	
+	num ++;
 }
 
 function corregirText() {
@@ -259,11 +272,11 @@ function corregirCheckbox() {
 		
 		if (numPregunta == 6) {
 			
-			numCheckbox = document.getElementsByName("checkbox1")
+			numCheckbox = document.getElementsByName("checkbox0")
 			
 		} else {
 			
-			numCheckbox = document.getElementsByName("checkbox2")
+			numCheckbox = document.getElementsByName("checkbox1")
 			
 		}
 		
@@ -344,8 +357,127 @@ function mostrarNota(){
 
 function comprobarContestadas() {
 	
-	// Cambiar poner datos en checkbox
-	//Cambiar select empieze en 1 por empieze en 0
-	//
+	//Comprobar Select
+	
+	for(numPregunta = 2; numPregunta < 4; numPregunta++) {
+		
+		var checked = false;
+		
+		if(document.getElementsByTagName("Select")[numPregunta - 2].value != -1) {
+			
+			checked = true;
+			
+		}
+
+		if (checked == false) {
+		
+			alert("Pregunta " + (numPregunta + 1) + " no contestada.")
+			return false;
+		
+		}
+		
+	}
+	
+	//Comprobar Select Multiple
+	
+	for (numPregunta = 4; numPregunta < 6; numPregunta++) {
+		
+		var sma = document.getElementsByTagName("select")[numPregunta - 2];
+		
+		var checked = false;
+		
+		for (aux = 0; aux < (sma.length); aux++) {
+			
+			var smo = document.getElementsByTagName("select")[numPregunta - 2].options[aux];
+			
+			if (smo.selected) {
+				
+				checked = true;
+				
+			}
+			
+		}
+		
+		if (checked == false) {
+		
+			alert("Pregunta " + (numPregunta + 1) + " no contestada.")
+			return false;
+		
+		}
+		
+	}
+	
+	//Comprobar Checkbox
+	
+	for (numPregunta = 6; numPregunta < 8; numPregunta++) {
+		
+		var checked = false;
+		
+		if (numPregunta == 6) {
+			
+			numCheckbox = document.getElementsByName("checkbox0")
+			
+		} else {
+			
+			numCheckbox = document.getElementsByName("checkbox1")
+			
+		}
+		
+		for (aux = 0; aux < (numCheckbox.length); aux++) {
+			
+			if (numCheckbox[aux].checked) {
+				
+				checked = true;	
+				
+			}
+			
+		}
+		
+		if (checked == false) {
+		
+			alert("Pregunta " + (numPregunta + 1) + " no contestada.")
+			return false;
+		
+		}
+		
+	}
+	
+	//Comprobar Radio
+	
+	var fe = formElement;
+	var numRadio = fe.radio1;
+	
+	for (numPregunta = 8; numPregunta < 10; numPregunta ++) {
+		
+		var checked = false;
+		
+		if (numPregunta == 8) {
+			
+			numRadio = fe.radio0;
+			
+		} else {
+			
+			numRadio = fe.radio1;
+			
+		}
+		
+		if (numRadio.value != "") {
+			
+			checked = true;
+			
+		}
+
+		if (checked == false) {
+		
+			alert("Pregunta " + (numPregunta + 1) + " no contestada.")
+			return false;
+		
+		}
+		
+	}
+	
+	//Si todas estan chekeadas
+	
+	return true
 
 }
