@@ -6,7 +6,7 @@ https://rawgit.com/AlvaroCabreraDAM1/Formulario/master/inicio.html
 
 Link al repositorio con código minimizado:
 
-
+https://github.com/AlvaroCabreraDAM1/Formulario/tree/minimizado
 
 Funcionalidades:
 
