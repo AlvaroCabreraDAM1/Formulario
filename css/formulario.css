@@ -91,7 +91,7 @@ a {
 		/*Tamaño*/
 	
 		height: 75px;
-		width: 100px;
+		width: 75px;
 	
 		/*Posicion*/
 		
@@ -135,7 +135,26 @@ a {
 		
 }
 
-#formulario {
+#logo {
+	
+	/* Basico: */
+	
+		/* Tamaño */
+		
+		height:100%;
+		width:100%;
+	
+		/* Posicion */
+	
+		/* Margen */
+	
+		/* Fondo */
+	
+	/* Otros: */
+	
+}
+
+.formulario {
 	
 	/* Basico: */
 	
@@ -151,8 +170,6 @@ a {
 		/* Margen */
 	
 		/* Fondo */
-		
-		
 	
 	/* Otros: */
 	
@@ -165,7 +182,6 @@ a {
 		/* Tamaño */
 	
 		/* Posicion */
-		
 	
 		/* Margen */
 	
@@ -185,8 +201,22 @@ a {
 
 input[type=text] {
 	
-	width:50%;
+	/* Basico: */
 	
+		/* Tamaño */
+		
+		width:50%;
+	
+		/* Posicion */
+	
+		/* Margen */
+	
+		/* Fondo */
+	
+	/* Otros: */
+	
+		/* Fuente */
+		
 }
 
 select {
@@ -209,9 +239,24 @@ select {
 
 input[type=checkbox], [type=radio] {
 	
-	width:25px;
-	height:20px;
-	vertical-align:-5px;
+	/* Basico: */
+	
+		/* Tamaño */
+		
+		width:25px;
+		height:20px;
+	
+		/* Posicion */
+	
+		/* Margen */
+	
+		/* Fondo */
+	
+	/* Otros: */
+	
+		/* Aling */
+	
+		vertical-align:-5px;
 	
 }
 
@@ -292,4 +337,42 @@ input[type=checkbox], [type=radio] {
 	
 	/* Otros: */
 	
+}
+
+#respuesta {
+	
+	/* Basico: */
+	
+		/* Tamaño */
+	
+		/* Posicion */
+	
+		/* Margen */
+	
+		/* Fondo */
+	
+	/* Otros: */
+	
+		/* Display */
+	
+		display:none;
+	
+}
+
+#tope {
+	
+	/* Basico: */
+	
+		/* Tamaño */
+	
+		/* Posicion */
+	
+		/* Margen */
+	
+		/* Fondo */
+		
+		opacity: 0;
+	
+	/* Otros: */
+
 }

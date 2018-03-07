@@ -33,7 +33,9 @@ window.onload = function() {
 			corregirSelectMultiple();
 			corregirCheckbox();
 			corregirRadio();
+			
 			mostrarNota();
+			
 		
 			corregido = true;
 		
@@ -185,9 +187,13 @@ function corregirText() {
 			
 			nota += 1.0;
 			
+			explicar("La pregunta " + (numPregunta + 1) + " es correcta. " + "+ 1.0 Puntos");
+			
 		} else {
 			
 			nota -= 1.0;
+			
+			explicar("La pregunta " + (numPregunta + 1) + " es incorrecta. " + "+ 1.0 Puntos");
 			
 		}
 		
@@ -203,9 +209,13 @@ function corregirSelect() {
 			
 			nota += 1.0;
 			
+			explicar("La pregunta " + (numPregunta + 1) + " es correcta. " + "+ 1.0 Puntos");
+			
 		} else {
 			
 			nota -= 1.0;
+			
+			explicar("La pregunta " + (numPregunta + 1) + " es incorrecta. " + "+ 1.0 Puntos");
 			
 		}
 		
@@ -247,11 +257,15 @@ function corregirSelectMultiple() {
 					
 					nota += 1.0/numRespuestas[numPregunta];
 					
+					explicar("La opccion " + (auz + 1) + " de la pregunta " + (numPregunta + 1) + " es correcta. " + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
+					
 				}
 				
 				if (correcto == false) {
 					
 					nota -= 1.0/numRespuestas[numPregunta];
+					
+					explicar("La opccion " + (auz + 1) + " de la pregunta " + (numPregunta + 1) + " es incorrecta. " + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
 					
 				}
 				
@@ -302,11 +316,15 @@ function corregirCheckbox() {
 					
 					nota += 1.0/numRespuestas[numPregunta];
 					
+					explicar("La opccion " + (auz + 1) + " de la pregunta " + (numPregunta + 1) + " es correcta. " + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
+					
 				}
 					
 				if (correcto == false) {
 					
 					nota -= 1.0/numRespuestas[numPregunta];
+					
+					explicar("La opccion " + (auz + 1) + " de la pregunta " + (numPregunta + 1) + " es incorrecta. " + ((1.0/numRespuestas[numPregunta]).toFixed(2)) + " Puntos");
 					
 				}
 				
@@ -339,9 +357,13 @@ function corregirRadio() {
 			
 			nota += 1.0;
 			
+			explicar("La pregunta " + (numPregunta + 1) + " es correcta. " + "+ 1.0 Puntos");
+			
 		} else {
 			
 			nota -= 1.0;
+			
+			explicar("La pregunta " + (numPregunta + 1) + " es incorrecta. " + "- 1.0 Puntos");
 			
 		}
 		
@@ -349,10 +371,16 @@ function corregirRadio() {
 }
 
 function mostrarNota(){
+	var p = document.createElement("h4");
 	if (nota < 0) {
 		nota = 0;
-	} else {}
-	alert("Tu nota es: " + nota.toFixed(2));
+	}
+	var node = document.createTextNode("Tu nota es: " + nota.toFixed(2))
+	p.appendChild(node);
+	document.getElementById("respuesta2").appendChild(p);
+	document.getElementById("respuesta").style.display="inline-block";
+	document.getElementById("formulario").style.display="none";
+	window.location.hash = "#respuesta2";
 }
 
 function comprobarContestadas() {
@@ -480,4 +508,13 @@ function comprobarContestadas() {
 	
 	return true
 
+}
+
+function explicar(e) {
+	
+	var p = document.createElement("h4");
+	var node = document.createTextNode(" - " + e);
+	p.appendChild(node);
+	document.getElementById("respuesta2").appendChild(p);
+	
 }

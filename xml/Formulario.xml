@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="preguntas.xsd">
+<!DOCTYPE questions SYSTEM "dtd.dtd">
+
+<questions>
 
 	<question>
 		<type>text</type>
@@ -99,6 +101,6 @@
 		<option>Elijamos</option> 
 		<option>CHICOS!!!</option>
 		<answer></answer>		  
-	</question>			  
+	</question>	
 	
 </questions>	

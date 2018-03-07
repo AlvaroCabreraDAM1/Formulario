@@ -15,21 +15,21 @@
 	
 		<div id="cabecera">
 			
+			<div class="cabeceraB" id="formularioB">
+			
+				<img id="logo" src="img/logo.png" alt="logo">
+			
+			</div>
+			
 			<a href = "inicio.html"> <div class="cabeceraB" id="inicioB">
 			
 				<h4>Inicio</h4>
 			
 			</div> </a>
 			
-			<a href = "formulario.html"> <div class="cabeceraB" id="formularioB">
-			
-				<h4>Formulario</h4>
-			
-			</div> </a>
-			
 		</div>
 			
-		<form id = "formulario">
+		<form class = "formulario" id = "formulario">
 			
 			<div class="pregunta">
 				
@@ -87,7 +87,7 @@
 				
 				<select id="pregunta3_sel">
 				
-					<option value ="-1"></option>
+					<option selected value ="-1" disabled>Seleccione una opción...</option>
 					
 				</select>
 				
@@ -111,7 +111,7 @@
 
 				<select id="pregunta4_sel">
 				
-					<option value ="-1"></option>
+					<option selected value ="-1" disabled>Seleccione una opción...</option>
 					
 				</select>
 				
@@ -217,7 +217,7 @@
 					
 				<br><br>
 				
-				<div class="preguntaR" id="pregunta9">					
+				<div class="preguntaR">					
 					
 				</div>
 				
@@ -239,7 +239,7 @@
 					
 				<br><br>
 				
-				<div class="preguntaR" id="pregunta10">
+				<div class="preguntaR">
 							
 				</div>
 			
@@ -250,8 +250,18 @@
 			<input type="submit" id="submit">
 		
 		</form>
+			
+		<div class = "formulario" id = "respuesta">
 		
-		<br>
+			<div class = "pregunta" id = "respuesta2">
+		
+			<h1>¡Gracias por realizar el examen!</h1>
+		
+			</div>
+		
+		</div>
+		
+		<div id = "tope">.</div>
 
 	</body>
 	
