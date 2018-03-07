@@ -4,9 +4,9 @@ Link a la pagina:
 
 https://rawgit.com/AlvaroCabreraDAM1/Formulario/master/inicio.html
 
-Link al repositorio con codigo minimizado:
+Link al repositorio con código minimizado:
 
-j
+
 
 Funcionalidades:
 
@@ -23,7 +23,7 @@ Este formulario consta de:
   Cada pregunta bien contestada suma 1 punto (en el caso de preguntas con varias respuestas debes dar todas las respuestas validas para
   recibir el punto entero), las mal contestadas restan siguiendo el mismo criterio.
 
-- Autocorrección y una presentacion de la nota obtenida.
+- Autocorrección y una presentación de la nota obtenida.
 
 - Comprobación de preguntas no contestadas para que el usuario este obligado a contestarlas todas para poder corregir su examen.
 
